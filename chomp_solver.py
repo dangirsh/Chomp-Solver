@@ -50,7 +50,7 @@ class Board():
         return int(''.join(map(str, self.state)))
 
 class Solver():
-    ''' Brute force Chomp game solver. Uses double recursion to test
+    ''' Brute force Chomp game solver. Uses mutual recursion to test
         all possible games and save all states where player one is
         in a winning position. These states can then be used to find
         the ideal move for either player during a game. '''
